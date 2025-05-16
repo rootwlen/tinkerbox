@@ -19,7 +19,7 @@ EwoMail是基于Linux的开源邮件服务器软件，集成了众多优秀稳�
 关闭防火墙：systemctl stop firewalld.service
 ```
 
-![box-1.1png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.1png.png)
+![box-1.1png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.1.png)
 
 ## 2）设置主机名
 
