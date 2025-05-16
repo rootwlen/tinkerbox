@@ -19,7 +19,7 @@ EwoMail是基于Linux的开源邮件服务器软件，集成了众多优秀稳�
 关闭防火墙：systemctl stop firewalld.service
 ```
 
-![box-1.1](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.1.png)
+![box-1.1](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.1.png)
 
 ## 2）设置主机名
 
@@ -27,7 +27,7 @@ EwoMail是基于Linux的开源邮件服务器软件，集成了众多优秀稳�
 hostnamectl set-hostname mail.申请的域名
 ```
 
-![box-1.2](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.2.png)
+![box-1.2](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.2.png)
 
 ## 3）host配置
 
@@ -37,7 +37,7 @@ vi /etc/hosts
 邮件服务器ip mail.申请的域名  申请的域名  smtp.申请的域名 imap.申请的域名
 ```
 
-![box-1.3](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.3.png)
+![box-1.3](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.3.png)
 
 ## 4）安装EwoMail
 
@@ -45,17 +45,17 @@ vi /etc/hosts
 
 输入自己域名获取下载安装命令
 
-![box-1.4](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.4.png)
+![box-1.4](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.4.png)
 
 在vps上直接执行该命令，直接默认安装。
 
 如图出现该错误直接使用给出命令安装即可（图中重新执行该事务命令那条命令即可安装）。
 
-![box-1.5](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.5.png)
+![box-1.5](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.5.png)
 
 安装成功后如下图所示：
 
-![box-1.6](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.6.png)
+![box-1.6](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.6.png)
 
 
 
@@ -69,21 +69,21 @@ Centos7/8 使用命令进行获取
 amavisd -c /etc/amavisd/amavisd.conf showkey
 ```
 
-![box-1.7](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.7.png)
+![box-1.7](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.7.png)
 
 使用官方工具进行格式化,并且写入域名解析中即可：http://www.ewomail.com/list-20.html
 
-![box-1.8](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.8.png)
+![box-1.8](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.8.png)
 
 ## 6）端口服务介绍
 
 邮箱管理后台：http://IP:8010 （默认账号 admin，密码 ewomail123）
 
-![box-1.13](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.13.png)
+![box-1.13](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.13.png)
 
 web 邮件系统：http://IP:8000
 
-![box-1.14](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.14.png)
+![box-1.14](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.14.png)
 
 ## 7）端口未开启服务解决
 
@@ -101,7 +101,7 @@ sh ./start.sh 申请的域名
 
 利用netstat -antlp查看8000与8010端口的开启情况
 
-![box-1.15](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.15.png)
+![box-1.15](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.15.png)
 
 ## 9）DNS配置
 
@@ -109,7 +109,7 @@ sh ./start.sh 申请的域名
 
 域名解析处添加如下记录：
 
-![box-1.16](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.16.png)
+![box-1.16](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.16.png)
 
 A记录
 
@@ -119,25 +119,25 @@ A记录
 mail.申请的域名
 ```
 
-![box-1.17](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.17.png)
+![box-1.17](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.17.png)
 
 ```
 www.choiceway.top
 ```
 
-![box-1.18](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.18.png)
+![box-1.18](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.18.png)
 
 ```
 smtp.choiceway.top
 ```
 
-![box-1.19](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.19.png)
+![box-1.19](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.19.png)
 
 ```
 pop.choiceway.top
 ```
 
-![box-1.20](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.20.png)
+![box-1.20](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.20.png)
 
 MX记录
 
@@ -149,7 +149,7 @@ MX记录
  10      mail.yourdomain.com
 ```
 
-![box-1.21](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.21.png)
+![box-1.21](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.21.png)
 
 SPF记录
 
@@ -159,7 +159,7 @@ SPF记录
 v=spf1 a mx ip4:xx.xx.xx.xx -all
 ```
 
-![box-1.22](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.22.png)
+![box-1.22](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.22.png)
 
 DKIM记录
 
@@ -167,7 +167,7 @@ DKIM记录
 dkim._domainkey		| v=DKIM1; h=sha256; k=rsa; t=y; p=MIIBIjANBgkqhk8AMIIBCgKCAQEAsVasIoen4KWLsy+/y1zpVu0uz8hhpMlFox0cUSNneAccyKl9p6KvuN9Jv2D/SpTa8ldU7BV/XdFLLwqMmjMa6xOynkHy2Lk5LF8YFup8gno68/ZM01TDyOMS5eWosALzTpURKaoAfVYTp4//7AlcjpohKkJ7fEGq+0p1fCU+8Zi0FaWvNIJm/9iw2VQG3S0VxExaRj+MY7cbCpBpgAE1KsUeQuRcgb/8TJn83C3bFZwjsy0oh9qv/xxUYrbeJMDshYhQIDAQAB
 ```
 
-![box-1.23](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.23.png)
+![box-1.23](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.23.png)
 
 DMARC记录
 
@@ -175,28 +175,28 @@ DMARC记录
 _DMARC		v=DMARC1; p=none; sp=none;
 ```
 
-![box-1.24](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.24.png)
+![box-1.24](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.24.png)
 
 
 
 ## 10）邮件管理系统登录及配置
 
 添加域名以及邮箱账号：
-![box-1.25](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.25.png)
+![box-1.25](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.25.png)
 
-![box-1.26](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.26.png)
+![box-1.26](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.26.png)
 
-![box-1.27](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.27.png)
+![box-1.27](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.27.png)
 
 ## 11）Web邮件管理系统
 
 使用刚才添加的邮箱登录邮件管理系统，就可以利用当前邮箱发送邮件了。
 
-![box-1.28](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.28.png)
+![box-1.28](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.28.png)
 
 可以正常接收就可以了
 
-![box-1.29](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.29.png)
+![box-1.29](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.29.png)
 
 ## 12）部署过程中遇到的问题
 
@@ -214,9 +214,9 @@ vim /etc/amavisd/amavisd.conf
 :9999 #移至最后一行
 ```
 
-![box-1.9](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.9.png)
+![box-1.9](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.9.png)
 
-![box-1.10](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.10.png)
+![box-1.10](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.10.png)
 
 添加以下内容：
 
@@ -234,7 +234,7 @@ vim /usr/lib/systemd/system/amavisd.service
 #保存文件
 ```
 
-![box-1.11](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.11.png)
+![box-1.11](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.11.png)
 
 输入以下命令即可完成杀毒软件的关闭
 
@@ -245,7 +245,7 @@ systemctl disable clamd@amavisd
 systemctl restart amavisd
 ```
 
-![box-1.12](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.12.png)
+![box-1.12](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.12.png)
 
 12.2 发送邮件时一直被接收端邮箱判定为垃圾邮件进垃圾邮箱，甚至拒收？
 
@@ -255,7 +255,7 @@ systemctl restart amavisd
 网址：https://www.mail-tester.com/
 ```
 
-![box-1.31](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.31.png)
+![box-1.31](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.31.png)
 
 ```
 碰到的问题就是没有添加反向地址解析导致进垃圾邮箱甚至拒收：
@@ -266,12 +266,12 @@ systemctl restart amavisd
 
 没添加rDNS之前，这里nslookup自己的serverip是解析到的名称不是mail.yourdomain.com：
 
-![box-1.32](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.32.png)
+![box-1.32](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.32.png)
 
 在云服务器控制台添加rdns就可以了，我是华为云的vps,注意选对地理位置，要不找不到实例🤣：
 
-![box-1.33](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.33.png)
+![box-1.33](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.33.png)
 
 ok,这样就行了，再试试nslookup:
 
-![box-1.34](https://github.com/rootwlen/tinkerbox/tree/main/img/box-1.34.png)
+![box-1.34](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.34.png)
