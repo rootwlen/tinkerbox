@@ -19,7 +19,7 @@ EwoMail是基于Linux的开源邮件服务器软件，集成了众多优秀稳�
 关闭防火墙：systemctl stop firewalld.service
 ```
 
-![box-1.1png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.1.png)
+![box-1.1.png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.1.png)
 
 ## 2）设置主机名
 
@@ -27,7 +27,7 @@ EwoMail是基于Linux的开源邮件服务器软件，集成了众多优秀稳�
 hostnamectl set-hostname mail.申请的域名
 ```
 
-![box-1.2](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.2.png)
+![box-1.2.png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.2.png)
 
 ## 3）host配置
 
@@ -37,7 +37,7 @@ vi /etc/hosts
 邮件服务器ip mail.申请的域名  申请的域名  smtp.申请的域名 imap.申请的域名
 ```
 
-![box-1.3](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.3.png)
+![box-1.3.png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.3.png)
 
 ## 4）安装EwoMail
 
@@ -45,7 +45,7 @@ vi /etc/hosts
 
 输入自己域名获取下载安装命令
 
-![box-1.4](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.4.png)
+![box-1.4.png](https://github.com/rootwlen/tinkerbox/tree/main/服务部署/img/box-1.4.png)
 
 在vps上直接执行该命令，直接默认安装。
 
