@@ -149,7 +149,7 @@ MX记录
  10      mail.yourdomain.com
 ```
 
-![box-1.21](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.21.png)
+![box-1.21](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.35.png)
 
 SPF记录
 
