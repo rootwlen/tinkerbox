@@ -24,7 +24,7 @@ EwoMail是基于Linux的开源邮件服务器软件，集成了众多优秀稳�
 ## 2）设置主机名
 
 ```
-hostnamectl set-hostname mail.申请的域名
+hostnamectl set-hostname mail.yourdomain.com
 ```
 
 ![box-1.2](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.2.png)
@@ -34,7 +34,7 @@ hostnamectl set-hostname mail.申请的域名
 ```
 vi /etc/hosts
 添加如下内容：
-邮件服务器ip mail.申请的域名  申请的域名  smtp.申请的域名 imap.申请的域名
+邮件服务器ip mail.yourdomain.com  yourdomain.com  smtp.yourdomain.com imap.yourdomain.com
 ```
 
 ![box-1.3](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.3.png)
@@ -92,7 +92,7 @@ web 邮件系统：http://IP:8000
 如果访问不成功，切端口未开启，需要进入安装目录找到 start.sh 使用命令进行安装
 
 ```
-sh ./start.sh 申请的域名
+sh ./start.sh yourdomain.com
 ```
 
 
@@ -116,25 +116,25 @@ A记录
 `当其他SMTP服务器知道mail.yourdomain.com负责yourdomain.com的邮件发送和接收后，还必须要知道mail.yourdomain.com这台主机的IP才能建立连接并发送邮件。A记录就是将主机名解析成IP地址的一个记录。`
 
 ```
-mail.申请的域名
+mail.yourdomain.com
 ```
 
 ![box-1.17](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.17.png)
 
 ```
-www.choiceway.top
+www.yourdomain.com
 ```
 
 ![box-1.18](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.18.png)
 
 ```
-smtp.choiceway.top
+smtp.yourdomain.com
 ```
 
 ![box-1.19](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.19.png)
 
 ```
-pop.choiceway.top
+pop.yourdomain.com
 ```
 
 ![box-1.20](https://github.com/rootwlen/tinkerbox/blob/main/img/box-1.20.png)
